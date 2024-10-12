@@ -17,7 +17,7 @@
     background-color: #fdbc2f;/*couleur de la barre*/
     flex-wrap: wrap;
     align-items: center;
-    z-index: 1;
+    z-index: 1000;
 }
 /*logo qui est dans la barre*/
 .logo img{
@@ -43,6 +43,11 @@
     text-align: center;
     padding: 20px 20px  20px 20px;
     justify-content: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 /*avant qu'on ne clique sur les phrase dans la barre*/
 .nav-link, .back{
@@ -153,7 +158,7 @@
  }
 /* pour les cerlce au tour des icones*/ 
 .icon{
-    width: 50px;
+    width: 50px; 
     height: 50px;
     border: 2px dotted #faae3b;
     border-radius: 50px;
@@ -266,7 +271,7 @@
     flex: 1 1 calc(25% - 40px); /* Base flexible pour un design réactif */
     max-width: 250px;
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: 20px 10px 30px 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
@@ -274,8 +279,9 @@
 
 .product-item img {
     width: 100%;
-    max-width: 250px;/*la taille des images*/
-    margin-bottom: 20px;
+   height: 230px;/*la taille des images*/
+   object-fit: cover;
+   margin-bottom: 20px;
 }
 
 .product-item h3 {
